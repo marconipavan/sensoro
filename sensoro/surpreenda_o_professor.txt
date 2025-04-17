@@ -1,0 +1,21 @@
+Surpreenda o professor!!
+
+- esquematico 1:
+	nodeMCU com sensores de luz
+		https://www.adafruit.com/product/2167
+
+		Compared to PIR sensors, breakbeams are faster and allow better control of where you want to detect the motion. Compared to Sonar modules, they're less expensive. However, you do need both emitter and receiver
+
+
+
+- esquematico 2:
+	nodeMCU com capacitores
+
+- esquematico 3:
+	teensy com capacitores e modulo wifi
+
+- planejamento do site
+	quais protocolos usar (mqtt?)
+	flask ou nodejs?
+	html ou markdown?
+	quais informacoes serao apresentadas?
