@@ -10,6 +10,7 @@ Surpreenda o professor!!
 
 - esquematico 2:
 	nodeMCU com capacitores
+		https://docs.arduino.cc/tutorials/generic/capacitance-meter/
 
 - esquematico 3:
 	teensy com capacitores e modulo wifi
