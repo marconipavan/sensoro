@@ -12,11 +12,7 @@ Surpreenda o professor!!
 	nodeMCU com capacitores
 		https://docs.arduino.cc/tutorials/generic/capacitance-meter/
 
-- esquematico 3:
-	teensy com capacitores e modulo wifi
-
 - planejamento do site
 	quais protocolos usar (mqtt?)
 	flask ou nodejs?
-	html ou markdown?
 	quais informacoes serao apresentadas?

@@ -1,0 +1,32 @@
+Protocolos de comunicacao possiveis de serem usados:
+    - MQTT
+    - CoAP
+    - HTTP/HTTPS
+    - AMQP
+    - WebSockets
+
+Qual protocolo de comuicacao vamos usar?
+    - MQTT com broker Mosquitto
+
+Por que?
+    Mais simples!
+    WebSockets é usado para obter informacoes em tempo real. Nao precisamos disso, pois a comunicacao ocorre somente quando é detectado que nao há mais soro
+    AMQP é mais robusto que MQTT, costuma ser usado em aplicacoes coorporativas e banco de dados com mensagens. Nao eh o nosso caso
+    HTTP/HTTPS é mais pesado, embora seja facil de implementar
+    CoAP costuma ser uma opcao para redes com alto atraso
+
+Flask ou nodejs?
+    - Em nosso projeto, optamos por utilizar o flask pois não precisamos de WebSockets (node ja teria suporte nativo),
+        facilidade de utilizar flask-mqtt, e o fato de ser amplamente usado em projetos IoT facilita o desenvolvimento pois assim
+        encontramos mais recursos online.
+
+Quais informações serão apresentadas?
+    - Status:
+        Inativo
+        Aplicando soro
+        Aplicacao finalizada
+    - Horario de inicio
+    - Horario de fim
+
+Observações adicionais:
+    - Os dados de delta_t serao armazenados em um arquivo json para posterior comparacao e medida da eficacia do nosso projeto
