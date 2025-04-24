@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sensoro</title>
+    <script>
+        setInterval(() => {
+            fetch('/dados')
+                .then(r => r.text())
+                .then(data => {
+                    document.getElementById('dados').innerHTML = data;
+                })
+        }, 2000);
+    </script>
+</head>
+<body>
+    <h1>Sensorooo0o0o0o00o0o0o0o0o0!!!</h1>
+    <h2 id="dados"></h2>
+</body>
+</html>
